@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 1c65ace34f8e95b4c800b9a8ec9eacb0
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - coinSound: {fileID: 8300000, guid: 079175e383126844fbf6c88f7e70fcf0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
