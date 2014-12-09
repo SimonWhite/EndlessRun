@@ -7167,7 +7167,7 @@ MonoBehaviour:
   runSpeed: 12
   inAirControlAcceleration: 1
   jumpHeight: 12
-  doubleJump: 0
+  canDoubleJump: 0
   gravity: 20
   speedSmoothing: 10
   rotateSpeed: 500
