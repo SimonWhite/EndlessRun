@@ -37,6 +37,8 @@ var inAirControlAcceleration = 3.0;
 // How high do we jump when pressing jump and letting go immediately
 var jumpHeight = 0.7;
 
+var doubleJump = false;
+
 // The gravity for the character
 var gravity = 20.0;
 // The gravity in controlled descent mode
@@ -236,13 +238,18 @@ function ApplyJumping ()
 	if (lastJumpTime + jumpRepeatTime > Time.time)
 		return;
 
-	if (IsGrounded()) {
+	if (IsGrounded() || (lastJumpButtonTime > 1.5 && !doubleJump)) {
 		// Jump
 		// - Only when pressing the button down
 		// - With a timeout so you can press the button slightly before landing		
 		if (canJump && Time.time < lastJumpButtonTime + jumpTimeout) {
 			verticalSpeed = CalculateJumpVerticalSpeed (jumpHeight);
 			SendMessage("DidJump", SendMessageOptions.DontRequireReceiver);
+		}
+		if (IsGrounded() || doubleJump) {
+			doubleJump = false;
+		} else {
+			doubleJump = true;
 		}
 	}
 }
