@@ -13,12 +13,12 @@ public class CameraRunnerScript : MonoBehaviour {
 	}
 
 	void Update () {
-		if (delta > player.position.y +5) {
+		if (delta > player.position.y + 9) {
 			yposition = delta;
 		} else {
-			yposition = player.position.y + 2;
+			yposition = player.position.y + 9;
 		}
-		transform.position = new Vector3 (player.position.x, yposition, player.position.z - 12);
+		transform.position = new Vector3 (player.position.x, yposition - 5, player.position.z - 12);
 		if (Input.GetKey ("escape")) {
 			Application.LoadLevel(2);
 		}
