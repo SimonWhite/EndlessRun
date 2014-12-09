@@ -23,7 +23,7 @@ public class SpawnScript : MonoBehaviour {
 	
 	void Spawn()
 	{
-		Instantiate (obj [Random.Range (0, obj.Length)], new Vector3 (player.position.x + 35, height, player.position.z), Quaternion.identity);
+		Instantiate (obj [Random.Range (0, obj.Length)], new Vector3 (player.position.x + 70, height, player.position.z), Quaternion.identity);
 		Invoke ("Spawn", Random.Range (spawnMin, spawnMax));
 	}
 
