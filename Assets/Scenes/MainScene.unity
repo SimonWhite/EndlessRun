@@ -234,12 +234,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj:
-  - {fileID: 100000, guid: 3c4352e0381dd9f43b42fa50c51e0f03, type: 2}
-  - {fileID: 100000, guid: da5eaf9a3c1b9054ab4ba3aa73a7cb4c, type: 2}
   - {fileID: 100000, guid: 8b57e3c59fd24a54e880f13880b51d3f, type: 2}
   - {fileID: 100000, guid: da5eaf9a3c1b9054ab4ba3aa73a7cb4c, type: 2}
+  - {fileID: 100000, guid: 8b57e3c59fd24a54e880f13880b51d3f, type: 2}
+  - {fileID: 100000, guid: 8b57e3c59fd24a54e880f13880b51d3f, type: 2}
   spawnMin: 1.5
-  spawnMax: 3
+  spawnMax: 4
   player: {fileID: 1934511837}
   height: 0
   isGround: 1
@@ -1538,7 +1538,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 9397c99c511f149418f126c869222317, type: 2}
       propertyPath: obj.Array.data[3]
       value: 
-      objectReference: {fileID: 100000, guid: da5eaf9a3c1b9054ab4ba3aa73a7cb4c, type: 2}
+      objectReference: {fileID: 100000, guid: 8b57e3c59fd24a54e880f13880b51d3f, type: 2}
     - target: {fileID: 11400000, guid: 9397c99c511f149418f126c869222317, type: 2}
       propertyPath: player
       value: 
@@ -1549,12 +1549,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9397c99c511f149418f126c869222317, type: 2}
       propertyPath: spawnMax
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9397c99c511f149418f126c869222317, type: 2}
       propertyPath: isGround
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9397c99c511f149418f126c869222317, type: 2}
+      propertyPath: obj.Array.data[0]
+      value: 
+      objectReference: {fileID: 100000, guid: 8b57e3c59fd24a54e880f13880b51d3f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9397c99c511f149418f126c869222317, type: 2}
   m_RootGameObject: {fileID: 55820241}
@@ -6542,7 +6546,7 @@ Transform:
   m_GameObject: {fileID: 1713546749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.795948, y: 3.56123066, z: 0}
-  m_LocalScale: {x: 1.5, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -6726,7 +6730,7 @@ MonoBehaviour:
   - {fileID: 100000, guid: da5eaf9a3c1b9054ab4ba3aa73a7cb4c, type: 2}
   - {fileID: 100000, guid: 8b57e3c59fd24a54e880f13880b51d3f, type: 2}
   spawnMin: 2
-  spawnMax: 4
+  spawnMax: 4.5
   player: {fileID: 1934511837}
   height: 4
   isGround: 0
@@ -7344,7 +7348,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9397c99c511f149418f126c869222317, type: 2}
       propertyPath: spawnMax
-      value: 4
+      value: 4.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9397c99c511f149418f126c869222317, type: 2}
