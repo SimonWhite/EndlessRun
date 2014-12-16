@@ -3,13 +3,27 @@ using System.Collections;
 
 public class CameraRunnerScript : MonoBehaviour {
 
+	private GameObject lameCamera = null;
+	private GameObject mainCamera = null;
+
 	public Transform player;
 	
 	private float delta;
 	private float yposition;
 
 	void Start(){
-		delta = player.position.y;
+		//init camera
+		lameCamera = GameObject.Find("Main Camera");
+		if (lameCamera == null) {
+			Debug.Log ("Start(): Main Camera Camera not found");
+		}
+		
+		mainCamera = GameObject.Find("RealMainCamera");
+		if (mainCamera == null) {
+			Debug.Log ("Start(): Real Main Camera not found");
+		}
+		lameCamera.camera.enabled = false;
+		mainCamera.camera.enabled = true;
 	}
 
 	void Update () {
