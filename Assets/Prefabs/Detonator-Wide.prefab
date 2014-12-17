@@ -52,7 +52,7 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 2.26708102
+  size: 180.119995
   explodeDelayMin: .132426396
   explodeDelayMax: .149999991
   startDuration: 2

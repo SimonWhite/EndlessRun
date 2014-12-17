@@ -85,6 +85,7 @@ GameObject:
   - 33: {fileID: 21395888}
   - 23: {fileID: 21395887}
   - 65: {fileID: 21395886}
+  - 54: {fileID: 21395890}
   m_Layer: 0
   m_Name: LargeGround
   m_TagString: Untagged
@@ -146,6 +147,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!54 &21395890
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8b57e3c59fd24a54e880f13880b51d3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599608939}
+  m_GameObject: {fileID: 21395885}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1001 &24220715
 Prefab:
   m_ObjectHideFlags: 0
@@ -595,6 +612,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 224902920}
+  - 114: {fileID: 224902922}
+  - 114: {fileID: 224902921}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -616,6 +635,77 @@ Transform:
   - {fileID: 617198726}
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!114 &224902921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 218820cee82704b43838c07f263fcc64,
+    type: 2}
+  m_PrefabInternal: {fileID: 1222799064}
+  m_GameObject: {fileID: 224902919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 745312967000e3c449713c45a6a516f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  on: 1
+  detonatorControlled: 1
+  startSize: 1
+  size: 613.630005
+  explodeDelayMin: 0
+  explodeDelayMax: 0
+  startDuration: 2
+  duration: .25
+  timeScale: 1
+  startDetail: 1
+  detail: 1
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  startLocalPosition: {x: 0, y: 0, z: 0}
+  localPosition: {x: 0, y: 0, z: 0}
+  startForce: {x: 0, y: 0, z: 0}
+  force: {x: 0, y: 0, z: 0}
+  startVelocity: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  detailThreshold: 0
+  shockwaveMaterial: {fileID: 1302208165}
+  renderMode: 0
+--- !u!114 &224902922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 218820cee82704b43838c07f263fcc64,
+    type: 2}
+  m_PrefabInternal: {fileID: 1222799064}
+  m_GameObject: {fileID: 224902919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 10
+  color: {r: 1, g: .423000008, b: 0, a: .5}
+  explodeOnStart: 1
+  duration: 3
+  detail: 1
+  upwardsBias: 0
+  destroyTime: 7
+  useWorldSpace: 1
+  direction: {x: 0, y: 0, z: 0}
+  fireballAMaterial: {fileID: 2100000, guid: 3049dffabc5225d40b27675901977fdd, type: 2}
+  fireballBMaterial: {fileID: 2100000, guid: 02a46fb295082ed488cab61782ddc01f, type: 2}
+  smokeAMaterial: {fileID: 1642818378}
+  smokeBMaterial: {fileID: 1555901774}
+  shockwaveMaterial: {fileID: 1302208165}
+  sparksMaterial: {fileID: 748014703}
+  glowMaterial: {fileID: 1203570542}
+  heatwaveMaterial: {fileID: 0}
+  autoCreateFireball: 1
+  autoCreateSparks: 1
+  autoCreateShockwave: 1
+  autoCreateSmoke: 1
+  autoCreateGlow: 1
+  autoCreateLight: 1
+  autoCreateForce: 1
+  autoCreateHeatwave: 0
 --- !u!1 &290487138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,6 +1919,7 @@ GameObject:
   - 33: {fileID: 582500076}
   - 23: {fileID: 582500075}
   - 65: {fileID: 582500074}
+  - 54: {fileID: 582500078}
   m_Layer: 0
   m_Name: LargeGround
   m_TagString: Untagged
@@ -1890,6 +1981,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!54 &582500078
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8b57e3c59fd24a54e880f13880b51d3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266657694}
+  m_GameObject: {fileID: 582500073}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1001 &593598344
 Prefab:
   m_ObjectHideFlags: 0
@@ -2233,6 +2340,7 @@ GameObject:
   - 33: {fileID: 625949246}
   - 23: {fileID: 625949245}
   - 65: {fileID: 625949244}
+  - 54: {fileID: 625949248}
   m_Layer: 0
   m_Name: LargeGround
   m_TagString: Untagged
@@ -2294,6 +2402,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!54 &625949248
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8b57e3c59fd24a54e880f13880b51d3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 24220715}
+  m_GameObject: {fileID: 625949243}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1001 &642933933
 Prefab:
   m_ObjectHideFlags: 0
@@ -2528,6 +2652,7 @@ GameObject:
   - 33: {fileID: 684439228}
   - 23: {fileID: 684439227}
   - 65: {fileID: 684439226}
+  - 54: {fileID: 684439230}
   m_Layer: 0
   m_Name: MediumGround
   m_TagString: Untagged
@@ -2589,6 +2714,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!54 &684439230
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: da5eaf9a3c1b9054ab4ba3aa73a7cb4c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1407263555}
+  m_GameObject: {fileID: 684439225}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &684927572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,6 +2843,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1726249022}
   m_RootOrder: 0
+--- !u!21 &748014703
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sparks-Default
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c2557bac1251fb84aa9cfb8484770b19, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &755692923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,6 +3728,7 @@ GameObject:
   - 33: {fileID: 1091444940}
   - 23: {fileID: 1091444939}
   - 65: {fileID: 1091444938}
+  - 54: {fileID: 1091444941}
   m_Layer: 0
   m_Name: LargeGround
   m_TagString: Untagged
@@ -3618,6 +3790,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1181950649}
   m_GameObject: {fileID: 1091444936}
   m_Mesh: {fileID: 4300000, guid: 879dd62cbfd65314d812354e257fc5cc, type: 3}
+--- !u!54 &1091444941
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8b57e3c59fd24a54e880f13880b51d3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1181950649}
+  m_GameObject: {fileID: 1091444936}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1001 &1101566466
 Prefab:
   m_ObjectHideFlags: 0
@@ -3745,6 +3933,36 @@ Prefab:
   m_RootGameObject: {fileID: 1091444936}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!21 &1203570542
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Glow-Default
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 1e151393df889e545a0c0e295799dd39, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1222799064
 Prefab:
   m_ObjectHideFlags: 0
@@ -6140,6 +6358,36 @@ Transform:
   - {fileID: 857656805}
   m_Father: {fileID: 1069573574}
   m_RootOrder: 0
+--- !u!21 &1302208165
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Shockwave-Default
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: b7460a00d2f78cc48a5f7acbafe163e8, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: .100000001, g: .100000001, b: .100000001, a: 1}
 --- !u!1 &1326831815
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,6 +6772,32 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!21 &1555901774
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SmokeB-Default
+  m_Shader: {fileID: 4800000, guid: 57b270a4270e3ab4f854368f7c884dd4, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 2a6221eb1b1c50a4cb69a62e2f264e58, type: 3}
+          m_Scale: {x: .5, y: 1}
+          m_Offset: {x: .5, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1558442118
 Prefab:
   m_ObjectHideFlags: 0
@@ -6689,6 +6963,32 @@ Transform:
   - {fileID: 756657950}
   m_Father: {fileID: 689322315}
   m_RootOrder: 1
+--- !u!21 &1642818378
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SmokeA-Default
+  m_Shader: {fileID: 4800000, guid: 57b270a4270e3ab4f854368f7c884dd4, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 2a6221eb1b1c50a4cb69a62e2f264e58, type: 3}
+          m_Scale: {x: .5, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1659146090
 GameObject:
   m_ObjectHideFlags: 0
@@ -6835,6 +7135,7 @@ GameObject:
   - 33: {fileID: 1713546752}
   - 23: {fileID: 1713546751}
   - 65: {fileID: 1713546750}
+  - 54: {fileID: 1713546754}
   m_Layer: 0
   m_Name: LargeGround
   m_TagString: Untagged
@@ -6896,6 +7197,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!54 &1713546754
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8b57e3c59fd24a54e880f13880b51d3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 293502061}
+  m_GameObject: {fileID: 1713546749}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &1726249021
 GameObject:
   m_ObjectHideFlags: 0
