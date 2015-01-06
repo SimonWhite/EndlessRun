@@ -21,7 +21,9 @@ public class HudScript : MonoBehaviour {
 
 	void OnGUI()
 	{
-		GUI.Label (new Rect (20, 20, 100, 30), "Score: " + (int)(playerScore * 100));
+		GUIStyle style = new GUIStyle();
+		style.fontSize = 60;
+		GUI.Label (new Rect (20, 20, 100, 30), "Score: " + (int)(playerScore * 100), style);
 	}
 
 }
