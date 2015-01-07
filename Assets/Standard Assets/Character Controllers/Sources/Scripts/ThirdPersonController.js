@@ -303,7 +303,7 @@ function Update() {
 		Input.ResetInputAxes();
 	}
 
-	if (Input.GetButtonDown ("Jump"))
+	if (Input.GetButtonDown ("Jump") || Input.touchCount == 1)
 	{
 		lastJumpButtonTime = Time.time;
 	}

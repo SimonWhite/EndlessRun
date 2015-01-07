@@ -14,13 +14,13 @@ public class CameraRunnerScript : MonoBehaviour {
 	void Start(){
 		//init camera
 		lameCamera = GameObject.Find("Main Camera");
-		if (lameCamera == null) {
-			Debug.Log ("Start(): Main Camera Camera not found");
+		if (lameCamera != null) {
+			Debug.Log ("CR Start(): Main Camera Camera found");
 		}
 		
 		mainCamera = GameObject.Find("RealMainCamera");
-		if (mainCamera == null) {
-			Debug.Log ("Start(): Real Main Camera not found");
+		if (mainCamera != null) {
+			Debug.Log ("CR Start(): Real Main Camera found");
 		}
 		lameCamera.camera.enabled = false;
 		mainCamera.camera.enabled = true;
